@@ -14,7 +14,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 96px;
+  scroll-padding-top: 74px;
 }
 
 body {
@@ -286,7 +286,7 @@ a {
   background: var(--ink);
   color: var(--cream);
   padding: 64px 48px 56px;
-  scroll-margin-top: 96px;
+  scroll-margin-top: 74px;
 }
 
 .contact-grid {
