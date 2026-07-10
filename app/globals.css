@@ -156,26 +156,28 @@ a {
 
 /* ===== Section headers ===== */
 .section-bar {
-  padding: 28px 48px;
+  padding: 26px 48px;
   border-bottom: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--cream);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
 }
 
 .section-title {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 .section-note {
   font-size: 13px;
-  font-weight: 500;
-  color: var(--muted);
+  font-weight: 600;
+  color: #d7d1c5;
 }
 
 /* ===== Services ===== */
@@ -424,6 +426,24 @@ a {
 
   .nav-links {
     gap: 18px;
+  }
+
+  .section-bar {
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .section-note {
+    max-width: 34rem;
+    font-size: 14px;
+    line-height: 1.45;
   }
 
   .services-grid,

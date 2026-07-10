@@ -68,7 +68,7 @@ export default function ContactForm() {
       )}
       {status === "err" && (
         <div className="form-status err">
-          Something went wrong. Email me directly at contact@fortressmedia.com.
+          Something went wrong. Email me directly at contact@forteressmedia.com.
         </div>
       )}
     </form>

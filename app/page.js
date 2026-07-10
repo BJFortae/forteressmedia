@@ -91,7 +91,7 @@ export default function Home() {
 
       <section id="work" className="work">
         <div className="section-bar">
-          <div className="section-title">Proof — recent work</div>
+          <div className="section-title">Recent work</div>
         </div>
         <div className="work-grid">
           <div className="project">
@@ -170,8 +170,8 @@ export default function Home() {
             </h2>
             <div className="contact-direct">
               <div className="contact-direct-label">Direct</div>
-              <a href="mailto:contact@fortressmedia.com">
-                contact@fortressmedia.com
+              <a href="mailto:contact@forteressmedia.com">
+                contact@forteressmedia.com
               </a>
               <a href="tel:+16124701881">(612) 470-1881</a>
             </div>

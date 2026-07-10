@@ -121,7 +121,7 @@ export async function POST(request) {
 
   const { error } = await resend.emails.send({
     from: `Forteress Media <${process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev"}>`,
-    to: [process.env.CONTACT_TO_EMAIL || "contact@fortressmedia.com"],
+    to: [process.env.CONTACT_TO_EMAIL || "contact@forteressmedia.com"],
     replyTo: email,
     subject: `New inquiry from ${firstName} ${lastName}`,
     text: [
