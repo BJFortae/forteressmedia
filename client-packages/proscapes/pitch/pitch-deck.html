@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>ProScapes Redesign Pitch</title>
+    <style>
+      :root {
+        --green: #2f7d32;
+        --dark: #173d27;
+        --ink: #172019;
+        --muted: #647267;
+        --line: #dfe8df;
+        --paper: #f7faf4;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+      }
+      main {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 44px 24px 72px;
+      }
+      section {
+        padding: 42px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 {
+        max-width: 860px;
+        color: var(--dark);
+        font-size: 58px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+      h2 {
+        color: var(--dark);
+        font-size: 34px;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+      .eyebrow {
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .lead {
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .card {
+        min-height: 160px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+      .card strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--dark);
+        font-size: 22px;
+      }
+      .screens {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        align-items: start;
+      }
+      figure {
+        margin: 0;
+      }
+      figure img {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+      figcaption {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .offer {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+      .price {
+        display: grid;
+        place-items: center;
+        padding: 28px;
+        border-radius: 8px;
+        color: #ffffff;
+        background: var(--dark);
+        text-align: center;
+      }
+      .price strong {
+        display: block;
+        font-size: 48px;
+        line-height: 1;
+      }
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      li + li {
+        margin-top: 8px;
+      }
+      @media (max-width: 760px) {
+        h1 { font-size: 40px; }
+        .grid,
+        .screens,
+        .offer {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <p class="eyebrow">Private redesign concept</p>
+        <h1>ProScapes can look as reliable online as it already appears operationally.</h1>
+        <p class="lead">The current site has strong substance: commercial services, snow response, client portal, and service since 1958. The opportunity is to make that trust obvious on mobile and turn it into quote requests.</p>
+      </section>
+
+      <section>
+        <h2>UX assessment</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Mobile issue</strong>
+            Current mobile hero text clips off-screen, weakening the first impression.
+          </div>
+          <div class="card">
+            <strong>Trust buried</strong>
+            Since 1958, 24/7/365, memberships, and client portal are strong but not prioritized.
+          </div>
+          <div class="card">
+            <strong>CTA mismatch</strong>
+            "Get Started" is generic. Property managers need quote, snow/ice, and vendor confidence paths.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current vs. concept</h2>
+        <div class="screens">
+          <figure>
+            <img src="../screenshots/current/mobile-home.png" alt="Current ProScapes mobile homepage screenshot">
+            <figcaption>Current mobile homepage: visual brand is present, but key copy clips and proof is lower on the page.</figcaption>
+          </figure>
+          <figure>
+            <img src="../screenshots/prototype/mobile-home.png" alt="Prototype ProScapes mobile homepage screenshot">
+            <figcaption>Concept mobile homepage: commercial reliability, snow response, and quote path are clear above the fold.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div>
+          <h2>Focused rebuild offer</h2>
+          <ul>
+            <li>Mobile-first homepage and core service structure.</li>
+            <li>Commercial quote path and snow/ice service path.</li>
+            <li>Current site stays live until launch approval.</li>
+            <li>SSL/mobile cleanup, fast static hosting, and basic SEO structure.</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div>
+            <strong>$1,950</strong>
+            focused rebuild concept
+            <br>
+            optional $149/mo care plan
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

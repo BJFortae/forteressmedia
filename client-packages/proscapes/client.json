@@ -1,0 +1,29 @@
+{
+  "client_slug": "proscapes",
+  "business_name": "ProScapes",
+  "website_url": "https://www.proscapesmn.com/",
+  "vertical": "commercial landscaping, grounds maintenance, snow removal",
+  "location": "Eagan / Minneapolis-St. Paul, MN",
+  "phone": "",
+  "status": "prototype_ready",
+  "ux_score": 62,
+  "active_business_signals": [
+    "Live website",
+    "Commercial services and residential landscaping pages",
+    "Client portal",
+    "Careers page",
+    "Founded/serving clients since 1958",
+    "24/7/365 service claim",
+    "Memberships and associations listed"
+  ],
+  "ux_gap_signals": [
+    "Python HTTPS fetch raised certificate verification issue",
+    "Mobile hero copy clipped off the right side of the viewport",
+    "Hero CTA and trust proof could be clearer for property managers",
+    "Current site feels visually dated despite strong business proof",
+    "Commercial and residential audiences are mixed without a clear primary path"
+  ],
+  "prototype_url": "https://preview.forteressmedia.com/proscapes/",
+  "google_drive_folder_url": "",
+  "notes": "Prioritize commercial/facility maintenance buyer intent. Use residential as secondary path."
+}
