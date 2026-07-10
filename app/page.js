@@ -1,36 +1,143 @@
 import ContactForm from "../components/ContactForm";
 
+const siteUrl = "https://forteressmedia.com";
+const contactEmail = "contact@forteressmedia.com";
+const businessPhone = "+16124701881";
+
 const services = [
   {
     title: "Website builds",
-    desc: "Blank page to launch, designed and live.",
+    desc: "Blank page to launch for small business websites, campaign sites, service pages, and modern marketing websites.",
   },
   {
     title: "Website refreshes",
-    desc: "Modernization and UX for aging sites.",
+    desc: "Modernization, UX cleanup, messaging, performance, and conversion improvements for aging websites.",
   },
   {
     title: "App creation",
-    desc: "Tools and web apps that earn their keep.",
+    desc: "Custom web apps, internal tools, prototypes, and practical software that earns its keep.",
   },
   {
     title: "SEO optimization",
-    desc: "Technical SEO and local search.",
+    desc: "Technical SEO, local search readiness, metadata, structured content, and discoverability improvements.",
   },
   {
     title: "Media strategy",
-    desc: "Presence, content, channels — a real plan.",
+    desc: "Presence, content, channel strategy, launch planning, and a real plan for showing up online.",
   },
   {
     title: "AI & workflows",
-    desc: "AI implementation where it pays off.",
+    desc: "AI implementation, workflow automation, and business process improvements where they actually pay off.",
   },
 ];
+
+const faqs = [
+  {
+    question: "What does Forteress Media help with?",
+    answer:
+      "Forteress Media helps small businesses build and improve websites, web apps, SEO foundations, media strategy, and AI-enabled workflows.",
+  },
+  {
+    question: "Where is Forteress Media based?",
+    answer:
+      "Forteress Media is based in Minneapolis, Minnesota and works with businesses that need practical digital strategy and implementation.",
+  },
+  {
+    question: "Can Forteress Media rebuild an existing website?",
+    answer:
+      "Yes. Forteress Media can refresh an existing website, clarify the messaging, improve the user experience, strengthen SEO, and launch a cleaner version.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": `${siteUrl}/#business`,
+      name: "Forteress Media",
+      url: siteUrl,
+      email: contactEmail,
+      telephone: businessPhone,
+      image: `${siteUrl}/opengraph-image`,
+      priceRange: "$$",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Minneapolis",
+        addressRegion: "MN",
+        addressCountry: "US",
+      },
+      areaServed: [
+        { "@type": "City", name: "Minneapolis" },
+        { "@type": "State", name: "Minnesota" },
+        { "@type": "Country", name: "United States" },
+      ],
+      serviceType: [
+        "Website builds",
+        "Website refreshes",
+        "App creation",
+        "SEO optimization",
+        "Media strategy",
+        "AI workflow consulting",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Forteress Media",
+      publisher: { "@id": `${siteUrl}/#business` },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${siteUrl}/#webpage`,
+      url: siteUrl,
+      name: "Forteress Media | AI-First Website, App & Media Consulting",
+      description:
+        "AI-first media consulting for small businesses. Websites, apps, SEO, media strategy, and workflow implementation.",
+      isPartOf: { "@id": `${siteUrl}/#website` },
+      about: { "@id": `${siteUrl}/#business` },
+      primaryImageOfPage: `${siteUrl}/opengraph-image`,
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": `${siteUrl}/#services`,
+      name: "Forteress Media services",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.desc,
+          provider: { "@id": `${siteUrl}/#business` },
+        },
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteUrl}/#faq`,
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+  ],
+};
 
 export default function Home() {
   return (
     <main>
-      <nav className="nav">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <nav className="nav" aria-label="Primary navigation">
         <div className="nav-brand">Forteress Media</div>
         <div className="nav-links">
           <a href="#services">Services</a>
@@ -69,7 +176,7 @@ export default function Home() {
 
       <section id="services" className="services">
         <div className="section-bar">
-          <div className="section-title">Services</div>
+          <h2 className="section-title">Services</h2>
           <div className="section-note">
             Full service or one-time handoff — you own the files either way.
           </div>
@@ -91,7 +198,7 @@ export default function Home() {
 
       <section id="work" className="work">
         <div className="section-bar">
-          <div className="section-title">Recent work</div>
+          <h2 className="section-title">Recent work</h2>
         </div>
         <div className="work-grid">
           <div className="project">
@@ -157,6 +264,20 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="faq" id="faq">
+        <div className="section-bar">
+          <h2 className="section-title">Common questions</h2>
+        </div>
+        <div className="faq-grid">
+          {faqs.map((faq) => (
+            <article className="faq-item" key={faq.question}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </article>
+          ))}
         </div>
       </section>
 

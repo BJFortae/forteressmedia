@@ -170,6 +170,7 @@ a {
 }
 
 .section-title {
+  margin: 0;
   font-size: 16px;
   font-weight: 900;
   text-transform: uppercase;
@@ -280,6 +281,39 @@ a {
 
 .project-link:hover {
   color: var(--ink);
+}
+
+/* ===== FAQ ===== */
+.faq {
+  border-bottom: 2px solid var(--ink);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.faq-item {
+  padding: 28px 48px;
+}
+
+.faq-item:not(:last-child) {
+  border-right: 1px solid var(--ink);
+}
+
+.faq-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.faq-item p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 /* ===== Contact ===== */
@@ -421,6 +455,7 @@ a {
   .section-bar,
   .service,
   .project-meta,
+  .faq-item,
   .contact {
     padding-left: 24px;
     padding-right: 24px;
@@ -450,6 +485,7 @@ a {
 
   .services-grid,
   .work-grid,
+  .faq-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -463,6 +499,11 @@ a {
   }
 
   .project:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .faq-item:not(:last-child) {
     border-right: none;
     border-bottom: 1px solid var(--ink);
   }
