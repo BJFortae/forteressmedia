@@ -6,6 +6,7 @@
   --muted-dark: #8a867c;
   --line-dark: #3a3830;
   --klaus-blue: #1b4d89;
+  --anchor-offset: 76px;
 }
 
 * {
@@ -14,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 74px;
+  scroll-padding-top: var(--anchor-offset);
 }
 
 body {
@@ -286,7 +287,6 @@ a {
   background: var(--ink);
   color: var(--cream);
   padding: 64px 48px 56px;
-  scroll-margin-top: 74px;
 }
 
 .contact-grid {
@@ -473,6 +473,10 @@ a {
 }
 
 @media (max-width: 560px) {
+  :root {
+    --anchor-offset: 90px;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
   }
