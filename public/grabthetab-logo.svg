@@ -1,0 +1,7 @@
+<svg width="640" height="128" viewBox="0 0 640 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(64 64) scale(0.643) translate(-64 -64)">
+    <rect x="8" y="8" width="112" height="112" rx="28" fill="#E85D2F"/>
+    <path d="M50 36H43C39.134 36 36 39.134 36 43V85C36 88.866 39.134 92 43 92H85C88.866 92 92 88.866 92 85V43C92 39.134 88.866 36 85 36H78M50 36C50 39.866 53.134 43 57 43H71C74.866 43 78 39.866 78 36M50 36C50 32.134 53.134 29 57 29H71C74.866 29 78 32.134 78 36M48 55H80M48 67H80M48 79H68" stroke="#FFF8F3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(64 64) scale(1.16) translate(-64 -64)"/>
+  </g>
+  <text x="107" y="90" fill="#1A1612" font-family="DM Sans, Avenir Next, system-ui, sans-serif" font-size="72" font-weight="800" letter-spacing="-0.03em">GrabTheTab</text>
+</svg>
