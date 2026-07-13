@@ -138,7 +138,9 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <nav className="nav" aria-label="Primary navigation">
-        <div className="nav-brand">Forteress Media</div>
+        <div className="nav-brand">
+          Forteress <span>Media</span>
+        </div>
         <div className="nav-links">
           <a href="#services">Services</a>
           <a href="#work">Work</a>

@@ -56,6 +56,10 @@ a {
   text-transform: uppercase;
 }
 
+.nav-brand span {
+  color: var(--ember);
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
