@@ -93,9 +93,9 @@ const structuredData = {
       "@type": "WebPage",
       "@id": `${siteUrl}/#webpage`,
       url: siteUrl,
-      name: "Forteress Media | AI-First Website, App & Media Consulting",
+      name: "Forteress Media | Website, App & Media Consulting",
       description:
-        "AI-first media consulting for small businesses. Websites, apps, SEO, media strategy, and workflow implementation.",
+        "Media consulting for small businesses. Websites, apps, SEO, media strategy, and workflow implementation.",
       isPartOf: { "@id": `${siteUrl}/#website` },
       about: { "@id": `${siteUrl}/#business` },
       primaryImageOfPage: `${siteUrl}/opengraph-image`,
@@ -159,9 +159,8 @@ export default function Home() {
         </h1>
         <div className="hero-row">
           <p className="hero-sub">
-            AI-first media consulting for small businesses. Websites, apps,
-            SEO, and strategy — delivered by someone who&apos;s done it
-            before, without the agency markup.
+            Media consulting for small businesses. Websites, apps,
+            SEO, strategy, and AI implementation — delivered by someone who&apos;s done it before, without the agency markup.
           </p>
           <div className="hero-ctas">
             <a href="#contact" className="btn-primary">
