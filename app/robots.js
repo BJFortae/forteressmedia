@@ -5,7 +5,7 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/"],
+      disallow: ["/api/", "/proscapes/"],
     },
     sitemap: `${siteUrl}/sitemap.xml`,
     host: siteUrl,

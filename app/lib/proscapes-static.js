@@ -54,7 +54,9 @@ async function resolveFilePath(segments = []) {
 }
 
 export function proscapesPitchRedirect(request) {
-  return NextResponse.redirect(new URL("/proscapes/pitch/pitch-deck.html", request.url));
+  const response = NextResponse.redirect(new URL("/proscapes/pitch/pitch-deck.html", request.url));
+  response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  return response;
 }
 
 export async function serveProscapesFile(segments = []) {
