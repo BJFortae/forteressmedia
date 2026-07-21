@@ -1,0 +1,41 @@
+{
+  "slug": "twin-cities-contracting-services",
+  "business_name": "Twin Cities Contracting Services Inc.",
+  "website": "https://twincitiescontractingservices.com/",
+  "vertical": "Residential roofing",
+  "location": "Bloomington, MN",
+  "service_area": "Bloomington and the greater Twin Cities metro",
+  "phone": "(952) 405-6201",
+  "address": "140 W 98th St #202, Bloomington, MN 55420",
+  "contact": {
+    "best_contact_name": "Twin Cities Contracting Services team",
+    "outreach_email": "twincitiescontractingservices@gmail.com",
+    "contact_page": "https://twincitiescontractingservices.com/contact/",
+    "source_note": "Email found on Chamber of Commerce listing; phone/contact page confirmed from public site."
+  },
+  "status": "Build Out",
+  "preview_url": "https://preview.forteressmedia.com/twin-cities-contracting-services/",
+  "last_touch": "2026-07-16",
+  "pitch_angle": "The company has strong trust signals and a long local history, but the mobile homepage can feel crowded and the main hero message overflows the screen. A cleaner mobile-first redesign can make the phone/estimate path and 60-year credibility easier to act on.",
+  "offer_hypothesis": {
+    "build": "$1,950 flat homepage/site rebuild concept",
+    "maintenance": "$149/month optional hosting, maintenance, uptime, and small edits"
+  },
+  "evidence": {
+    "active_business_signals": [
+      "Website returned HTTP 200",
+      "Structured data lists RoofingContractor organization",
+      "Phone CTA visible: (952) 405-6201",
+      "Local address visible in Bloomington, MN",
+      "Messaging says roofing the Twin Cities since 1964",
+      "Service pages include roof replacement, roof installation, roof inspection, and residential shingle roofing"
+    ],
+    "ux_opportunities": [
+      "Mobile hero headline overflows horizontally on a 390px viewport",
+      "Hero message is long and SEO-heavy for first-screen conversion",
+      "Navigation repeats across desktop/mobile markup and feels dense",
+      "Important proof points and free inspection/estimate path can be organized more clearly",
+      "Large service-area content and FAQ depth could be structured for scanning"
+    ]
+  }
+}

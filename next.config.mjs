@@ -12,6 +12,15 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: "/twin-cities-contracting-services/:path*",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow",
+          },
+        ],
+      },
     ];
   },
 };

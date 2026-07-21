@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Twin Cities Contracting Services Redesign Pitch</title>
+    <style>
+      :root {
+        --navy: #172d57;
+        --dark: #0f1d35;
+        --ink: #17202b;
+        --muted: #5d6875;
+        --line: #d9e0e7;
+        --paper: #f5f7f9;
+        --action: #c95f2d;
+        --gold: #d59b3d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+      main {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 44px 24px 72px;
+        overflow: hidden;
+      }
+      section {
+        padding: 42px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 {
+        max-width: 900px;
+        color: var(--dark);
+        font-size: 58px;
+        line-height: 1;
+        letter-spacing: 0;
+        overflow-wrap: break-word;
+      }
+      h2 {
+        color: var(--dark);
+        font-size: 34px;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+      .eyebrow {
+        color: var(--action);
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .lead {
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 20px;
+        overflow-wrap: break-word;
+      }
+      .section-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        padding: 15px 24px;
+        border-radius: 6px;
+        background: var(--action);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 800;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .card {
+        min-width: 0;
+        min-height: 160px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+      .card strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--dark);
+        font-size: 22px;
+      }
+      .screens {
+        display: grid;
+        gap: 24px;
+        align-items: start;
+      }
+      .desktop-screens {
+        grid-template-columns: 1fr;
+      }
+      .mobile-screens {
+        grid-template-columns: repeat(2, minmax(0, 340px));
+        justify-content: center;
+      }
+      figure { margin: 0; }
+      .screen-label {
+        margin: 0 0 10px;
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .screenshot-frame {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+      .desktop-screens .screenshot-frame {
+        aspect-ratio: 1440 / 1100;
+      }
+      .mobile-screens .screenshot-frame {
+        aspect-ratio: 390 / 844;
+      }
+      figure img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+      figcaption {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .offer {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.52fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+      .price {
+        display: grid;
+        place-items: center;
+        padding: 28px;
+        border-radius: 8px;
+        color: #ffffff;
+        background: var(--dark);
+        text-align: center;
+      }
+      .price strong {
+        display: block;
+        font-size: 48px;
+        line-height: 1;
+      }
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      li + li { margin-top: 8px; }
+      @media (max-width: 760px) {
+        main {
+          width: min(100%, 390px);
+          max-width: 390px;
+          padding: 36px 18px 64px;
+        }
+        h1 {
+          max-width: 340px;
+          font-size: 30px;
+        }
+        h2,
+        .lead {
+          max-width: 340px;
+        }
+        .grid,
+        .mobile-screens,
+        .offer {
+          grid-template-columns: 1fr;
+          max-width: 340px;
+        }
+        .card,
+        .section-action {
+          max-width: 340px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <p class="eyebrow">Private redesign concept</p>
+        <h1>A cleaner roofing site.</h1>
+        <p class="lead">The current site has strong substance: roofing since 1964, Bloomington roots, and focused residential services. The opportunity is a faster call / inspection path.</p>
+        <a class="section-action" href="../prototype/index.html">View Prototype</a>
+      </section>
+
+      <section>
+        <h2>UX Summary</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Mobile Hero Is Dense</strong>
+            The first screen carries SEO, location, company name, and CTA all at once.
+          </div>
+          <div class="card">
+            <strong>Trust Proof Exists</strong>
+            Since 1964, Bloomington location, and service depth are valuable but can be surfaced faster.
+          </div>
+          <div class="card">
+            <strong>CTA Can Be Clearer</strong>
+            Homeowners should immediately see call now and free roof inspection actions.
+          </div>
+        </div>
+        <a class="section-action" href="ux-scorecard.html">View Complete UX Assessment</a>
+      </section>
+
+      <section>
+        <h2>Current Desktop vs. Concept</h2>
+        <div class="screens desktop-screens">
+          <figure>
+            <h3 class="screen-label">Current</h3>
+            <div class="screenshot-frame">
+              <img src="screenshots/current/current_desktop.png" alt="Current Twin Cities Contracting Services desktop homepage screenshot">
+            </div>
+            <figcaption>Current desktop homepage: strong service content, but the first impression leans dense and SEO-heavy.</figcaption>
+          </figure>
+          <figure>
+            <h3 class="screen-label">Concept</h3>
+            <div class="screenshot-frame">
+              <img src="screenshots/prototype/prototype_desktop.png" alt="Prototype Twin Cities Contracting Services desktop homepage screenshot">
+            </div>
+            <figcaption>Concept desktop homepage: local history, services, and call/inspection path are clear above the fold.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current Mobile vs. Concept</h2>
+        <div class="screens mobile-screens">
+          <figure>
+            <h3 class="screen-label">Current</h3>
+            <div class="screenshot-frame">
+              <img src="screenshots/current/current_mobile.png" alt="Current Twin Cities Contracting Services mobile homepage screenshot">
+            </div>
+            <figcaption>Current mobile homepage: long hero copy takes over the first screen.</figcaption>
+          </figure>
+          <figure>
+            <h3 class="screen-label">Concept</h3>
+            <div class="screenshot-frame">
+              <img src="screenshots/prototype/prototype_mobile.png" alt="Prototype Twin Cities Contracting Services mobile homepage screenshot">
+            </div>
+            <figcaption>Concept mobile homepage: shorter headline, clear phone CTA, and inspection action.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="offer">
+          <div>
+            <p class="eyebrow">Suggested offer</p>
+            <h2>A focused homepage rebuild without taking the current site down.</h2>
+            <ul>
+              <li>Mobile-first homepage redesign.</li>
+              <li>Call and free-inspection conversion path.</li>
+              <li>Preserve roofing/local SEO value in production.</li>
+              <li>Current site stays live until replacement is approved.</li>
+            </ul>
+          </div>
+          <div class="price">
+            <div>
+              <strong>$1,950</strong>
+              <span>early case-study homepage rebuild</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

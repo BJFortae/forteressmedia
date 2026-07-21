@@ -5,7 +5,7 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/proscapes/"],
+      disallow: ["/api/", "/proscapes/", "/twin-cities-contracting-services/"],
     },
     sitemap: `${siteUrl}/sitemap.xml`,
     host: siteUrl,
