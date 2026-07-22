@@ -6,7 +6,7 @@ Twin Cities Contracting Services Inc. is a Bloomington roofing contractor servin
 
 ## Why This Prospect
 
-The company appears established and credible, but the mobile homepage can do a better job presenting that credibility quickly. The current site has strong trust signals, service depth, and local SEO content, but the first screen is dense and the captured mobile hero headline overflows the viewport.
+The company appears established and credible, and Forteress Media can use a focused website uplift as the entry point for a broader AI-native growth conversation. The current site has strong trust signals, service depth, and local SEO content, but the first screen is dense and the captured mobile hero headline overflows the viewport.
 
 ## Current UX Opportunity
 
@@ -18,7 +18,7 @@ The company appears established and credible, but the mobile homepage can do a b
 
 ## Proposed Redesign
 
-The prototype reframes the homepage around homeowner action:
+The prototype reframes the homepage around homeowner action while positioning Forteress Media as a practical growth partner:
 
 - H1: "Roofing since 1964."
 - Primary CTA: Call for roofing service.
@@ -28,12 +28,20 @@ The prototype reframes the homepage around homeowner action:
 - Project imagery pulled from the public site.
 - Low-friction concept form clearly marked as demo-only.
 
+Broader consulting angle:
+
+- Website uplift as the visible proof point.
+- Local SEO and service-area messaging cleanup.
+- Lead-capture and quote-request flow improvements.
+- Practical automation / AI follow-up opportunities after the site earns interest.
+
 ## Offer
 
-Suggested early-case-study offer:
+Suggested early-case-study offer / conversation starter:
 
 - $1,950 flat homepage/site rebuild.
 - Optional $149/month for hosting, maintenance, uptime checks, small edits, and basic reporting.
+- Optional growth sprint covering messaging, local SEO basics, conversion path, and lightweight AI-enabled follow-up workflows.
 
 Scope should stay focused:
 
@@ -55,3 +63,8 @@ Screenshots:
 - `screenshots/current/desktop-home.png`
 - `screenshots/prototype/mobile-home.png`
 - `screenshots/prototype/desktop-home.png`
+
+Email visual:
+
+- Use `public/twin-cities-contracting-services/pitch/screenshots/prototype/prototype_desktop.png` as the embedded/attached full-screen screenshot.
+- Keep mobile screenshots available in the pitch deck and audit for supporting evidence.

@@ -571,22 +571,25 @@ textarea {
 
   .mobile-actions {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    right: 14px;
+    bottom: 8px;
+    left: 14px;
     z-index: 30;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 1px;
-    padding: 8px;
-    background: rgba(15, 29, 53, 0.96);
+    gap: 10px;
+    padding: 0;
+    background: transparent;
   }
 
   .mobile-actions a {
     min-height: 48px;
     min-width: 0;
+    padding: 10px 8px;
+    border-radius: 6px;
+    box-shadow: 0 10px 24px rgba(15, 29, 53, 0.26);
     color: var(--white);
     background: var(--orange);
-    font-size: 15px;
+    font-size: 14px;
   }
 }

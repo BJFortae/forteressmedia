@@ -48,4 +48,4 @@ If Brenden approves the direction, package this into the ForteressMedia preview 
 
 `preview.forteressmedia.com/twin-cities-contracting-services/`
 
-Then prepare a short outreach note with the current mobile screenshot, redesigned mobile screenshot, and preview link.
+Then prepare a short outreach note with the deployed pitch link and the redesigned desktop/full-screen screenshot as the primary email visual. Keep mobile screenshots inside the pitch/audit as supporting evidence.
