@@ -28,6 +28,14 @@ The prototype reframes the homepage around homeowner action while positioning Fo
 - Project imagery pulled from the public site.
 - Low-friction concept form clearly marked as demo-only.
 
+## Public Content Reused
+
+- Business history: roofing the Twin Cities since 1964.
+- Location/service area: Bloomington and surrounding Twin Cities metro communities.
+- Services: roof replacement, roof installation, roof inspection, and residential shingle roofing.
+- CTA language: phone-first roofing service and free inspection path.
+- Public imagery: logo, roof/house hero image, roofing installation/project imagery, and residential exterior photos pulled from the current public website.
+
 Broader consulting angle:
 
 - Website uplift as the visible proof point.
